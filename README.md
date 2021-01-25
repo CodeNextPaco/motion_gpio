@@ -21,7 +21,7 @@ Once you create a new Gmail account and have logged on, you have to allow Less S
 
 Change the sender email and password in your code.
 
-### installing Pygame:
+#### installing Pygame:
 ````bash
 $ sudo apt-get update
 $ python3 -m pip install -U pygame --user
