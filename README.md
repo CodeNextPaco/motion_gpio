@@ -9,7 +9,7 @@ Raspberry pi examples using GPIO Zero and motion sensor (PIR).
 5. M-F Jumper wires
 
 ## motion1.py
-A detects motion with PIR sensor and logs the change. 
+A detects motion with PIR sensor and logs the change. It also turns on an LED connected to GPIO pin 14. 
 
 ## motion2.py
 A Raspberry Pi Alarm. It Detects motion and turns on LED, sends email, stores a time stamp in a text file and plays a .wav file using the ***pygame*** library. It also uses ***smtplib*** to send email.
