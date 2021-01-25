@@ -6,9 +6,11 @@ from email.message import EmailMessage
 import pygame
 
 pir = MotionSensor(4) # pir.when_motion = led.on # pir.when_motion = led.on
-led = LED(14) 
-sender = "donotreply1@csedge.org"
-recipient= "paco@csedge.org"
+led = LED(14)
+
+#change below to your own email. This script is set for use with a gmail account.
+sender = "<sender email address>"
+recipient= "<recipient email>"
 
 
 def get_time():
@@ -34,9 +36,9 @@ def send_email():
     msg['To'] = recipient
     
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.login("donotreply1@csedge.org", "codenext")
+    server.login("<your gmail>", "<your passoword>")
     
-    #server.sendmail( "donotreply1@csedge.org", recipient, "Intruder alert" )
+    server.sendmail( "donotreply1@csedge.org", recipient, "Intruder alert" )
     server.send_message(msg)
     
     print("sending email...")
@@ -62,8 +64,6 @@ def play_sound():
     mysound.stop()
  
     
-    
-
 def log_incident():
     
     time = get_time()
@@ -78,6 +78,7 @@ while True:
     if pir.motion_detected:
         led.on()
         log_incident()
+        
         #send_email()
         play_sound()
         sleep(4)
