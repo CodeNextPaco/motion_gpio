@@ -7,6 +7,7 @@ Raspberry pi examples using GPIO Zero and motion sensor (PIR).
 3. 220Ω or 330Ω resistor
 4. PIR motion sensor HC-SR501 - 5V
 5. M-F Jumper wires
+6. Breadboard
 
 ## motion1.py
 A detects motion with PIR sensor and logs the change. It also turns on an LED connected to GPIO pin 14. 
