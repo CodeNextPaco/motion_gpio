@@ -4,8 +4,6 @@ from time import sleep
 
 pir = MotionSensor(4) # pir.when_motion = led.on # pir.when_motion = led.on
 led = LED(14)    
- 
- 
 
 while True:
      
