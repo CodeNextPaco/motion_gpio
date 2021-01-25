@@ -17,6 +17,14 @@ A Raspberry Pi Alarm. It Detects motion and turns on LED, sends email, stores a 
 #### setting up email:
 Before running this project, make sure to set up a gmail account. 
 
+### installing Pygame:
+````bash
+sudo apt-get update
+python3 -m pip install -U pygame --user
+````
+if lib2
+
+
 ### wiring
 !['fritzing diagram'](https://i.imgur.com/MTdryvE.png)
 
