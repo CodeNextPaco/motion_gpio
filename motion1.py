@@ -8,11 +8,13 @@ led = LED(14)
  
 
 while True:
-     led.on()
+     
      if pir.motion_detected:
          print("Motion!")
+         led.on()
      else:
          print("no motion")
+         led.off()
 
 pause()
 
