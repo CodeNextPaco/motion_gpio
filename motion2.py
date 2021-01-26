@@ -38,7 +38,7 @@ def send_email():
     server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
     server.login("<your gmail>", "<your password>")
     
-    server.sendmail( "donotreply1@csedge.org", recipient, "Intruder alert" )
+    #send the mail
     server.send_message(msg)
     
     print("sending email...")
